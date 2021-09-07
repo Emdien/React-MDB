@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-// API
-import API from '../API';
+import React from 'react';
 
 // Config
 
@@ -24,7 +22,7 @@ import NoImage from '../images/no_image.jpg';
 
 const Home = () => {
 
-    const { state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore } = useHomeFetch();
+    const { state, loading, setSearchTerm, searchTerm, setIsLoadingMore } = useHomeFetch();
 
     console.log(state);
     return (
